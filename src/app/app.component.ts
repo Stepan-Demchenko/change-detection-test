@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'change-detection';
+  someData = {
+    test: 'one'
+  }
+
+  testClick(): void {
+    this.someData.test = 'two';
+  }
 }
