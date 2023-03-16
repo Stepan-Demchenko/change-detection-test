@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SomeData } from '../some-data';
 
 @Component({
   selector: 'app-default-detection',
@@ -6,6 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./default-detection.component.scss']
 })
 export class DefaultDetectionComponent {
-  @Input() someData: any;
-  constructor() {}
+  @Input() someData!: SomeData;
 }

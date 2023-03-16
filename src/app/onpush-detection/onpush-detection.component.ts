@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { SomeData } from '../some-data';
 
 @Component({
   selector: 'app-onpush-detection',
@@ -7,7 +8,5 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OnpushDetectionComponent {
-  @Input() someData: any;
-  constructor() { }
-
+  @Input() someData!: SomeData;
 }
